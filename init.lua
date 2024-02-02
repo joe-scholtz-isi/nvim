@@ -2,6 +2,7 @@
 require("config.lazy")
 -- after
 require("plugins.vim_tmux_nav")
+require("plugins.neo-tree")
 require("plugins.colorscheme")
 require("plugins.lsp")
 require("plugins.debug")
