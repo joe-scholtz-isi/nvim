@@ -11,8 +11,13 @@ return {
     },
   },
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      format = { timeout_ms = 10000 }
+    }
+  },
+  {
     "nvimtools/none-ls.nvim",
-    optional = true,
     opts = function(_, opts)
       local nls = require("null-ls")
       opts.sources = opts.sources or {}
@@ -21,7 +26,6 @@ return {
   },
   {
     "stevearc/conform.nvim",
-    optional = true,
     opts = {
       formatters_by_ft = {
         ["python"] = { "black" },
